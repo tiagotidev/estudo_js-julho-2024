@@ -1,0 +1,117 @@
+/* seletor{
+    propriedade: valor;
+ } */
+ body{
+    background-color: rgb(28, 37, 115);
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif; 
+    /*sans-serif é um estilo e fonte e não é uma fonte*/
+ } 
+
+ img{
+    display: block; /* IE - Retira o espaço abaixo das imagens, se comportando como uma caixa*/
+    /*margin: 0 auto;*/
+ }
+
+ h1{
+    font-size: 36px;
+    color: #333333;
+    margin-bottom: 0;/*Retirando a margem de baixo*/
+
+  }
+
+  p{
+    margin: 0;
+    color: #666666;
+  }
+
+  form{
+    margin-top: 35px;
+
+  }
+
+  input{
+    padding: 10px;
+    width: 460px;
+    height: 35px;
+    border-radius: 5px; 
+    border: 1px solid #ccc;
+    margin-bottom: 15px;
+    margin-top: 6px;
+    font-size: 16px;
+    box-sizing: border-box;/*Faz com que os valores de largura e altura sejam respeitados*/
+  }
+
+  button{
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+  }
+
+  button:hover{
+    background-color: #0069d9;
+  }
+
+ /* #principal{
+    background-color: white;
+    width: 1000px;
+    height: 560px;
+    margin: auto;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.419);
+    display: flex;
+  }*/
+
+  /* CSS Flexbox */
+  #flex-center{
+    display: flex;
+    justify-content: center;/*alinhamento horizontal*/
+    align-items: center;/*alinhamento vertical*/
+    height: 100vh; /*100% da altura da viewport*/
+    /*percentual de altura do navegador*/
+    background-color: #F2F2F2;
+  }
+
+  #principal{
+    width: 1000px !important;
+    height: 560px !important;
+    background-color: #FFFFFF !important;
+    display: flex;
+    gap: 25px;/*(espaçamento entre os filhos ou itens)*/
+    align-items: center; /*alinhamento vertical dos itens*/
+    color: #666666;
+    /*flex-direction: column;
+    align-items: center;
+    justify-content: center;*/
+    /*CENTRALIZA HORIZONTALMENTE - 
+    margin-left: auto;
+    margin-right: auto;*/
+  }
+
+  /*Flexbox(Conjunto de propriedades CSS para layout)*/
+  /* Responsivo */
+  @media (max-width: 1000px) {
+    #foto{
+      display: none; /*removendo o id  */
+    }
+
+    #principal{
+      width: 70%; /*tornando a largura 100% */
+      height: auto; /*tornando a altura auto */
+      justify-content: center;
+    }
+    input{
+      width: 100%;
+    }
+    }
+  
+  @media(max-width:500px) {
+    
+    }
+  

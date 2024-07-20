@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto IMC</title>
+    <!-- Rel - INSERIR COM MENTÁRIO - CRTL + PONTO E VÍRGULA -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    <div id="flex-center">
+        <div id="principal">
+        <div id="foto">
+            <img src="img/foto.jpg" alt="Descrição da imagem" srcset="">
+
+        </div>
+        <div id="conteudo">
+            <img src="img/foto.png" alt="Logotipo">
+            <h1>Calcule o IMC</h1>
+            <p>Preencha as informações abaixo para calcular</p>
+            <form action="#">
+                <label for="peso">Digite seu peso</label><br>
+                <input type="number" id="peso" step="0.01"><br>
+
+                <label for="altura">Digite sua altura</label><br>
+                <input type="number" id="altura" step="0.01"><br>
+
+                <button id="btn">Calcular IMC</button>
+            </form>
+        </div>
+        </div>
+    </div>
+    <!-- Ligação entre HTML e JS -->
+    <script src="js/script.js"></script>
+</body>
+</html>
